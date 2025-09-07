@@ -1,0 +1,466 @@
+{% extends "base.html" %}
+
+{% block title %}Teacher Dashboard - Student Dropout Analysis{% endblock %}
+
+{% block extra_css %}
+<style>
+    .stat-card {
+        transition: all 0.3s;
+        border-left: 4px solid;
+    }
+    .stat-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+    }
+    .stat-card i {
+        font-size: 2rem;
+        opacity: 0.8;
+    }
+    .risk-badge {
+        font-size: 0.8rem;
+        padding: 0.35em 0.65em;
+    }
+    .student-row:hover {
+        background-color: #f8f9fa;
+        cursor: pointer;
+    }
+    .chart-container {
+        position: relative;
+        height: 300px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="h3 mb-1">Teacher Dashboard</h1>
+                    <p class="text-muted mb-0">Overview of student performance and risk assessment</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exportModal">
+                        <i class="fas fa-download me-2"></i>Export Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="card stat-card h-100 border-start border-primary">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-muted mb-2">Total Students</h6>
+                            <h2 class="mb-0">{{ stats.total_students }}</h2>
+                        </div>
+                        <div class="text-primary">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <span class="text-muted small">
+                            <i class="fas fa-arrow-up text-success"></i> 5.2% from last term
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card stat-card h-100 border-start border-danger">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-muted mb-2">At Risk</h6>
+                            <h2 class="mb-0">{{ "%.1f"|format(stats.dropout_risk) }}<small class="h6 text-muted">%</small></h2>
+                        </div>
+                        <div class="text-danger">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <span class="text-muted small">
+                            <i class="fas fa-arrow-down text-success"></i> 2.1% from last term
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card stat-card h-100 border-start border-success">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-muted mb-2">Avg. Attendance</h6>
+                            <h2 class="mb-0">{{ "%.1f"|format(stats.avg_attendance) }}<small class="h6 text-muted">%</small></h2>
+                        </div>
+                        <div class="text-success">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <span class="text-muted small">
+                            <i class="fas fa-arrow-up text-success"></i> 3.5% from last term
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+            <div class="card stat-card h-100 border-start border-info">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-muted mb-2">Avg. GPA</h6>
+                            <h2 class="mb-0">{{ "%.2f"|format(stats.avg_overall) }}</h2>
+                        </div>
+                        <div class="text-info">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <span class="text-muted small">
+                            <i class="fas fa-arrow-up text-success"></i> 0.15 from last term
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="row mb-4">
+        <div class="col-md-8 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Performance Overview</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <!-- This will be replaced with the actual chart by JavaScript -->
+                        <div id="performanceChart" 
+                             data-avg-attendance="{{ stats.avg_attendance|default(80) }}"
+                             data-avg-gpa="{{ '%.2f'|format(stats.avg_overall|default(3.0)) }}"
+                             style="height: 100%; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Risk by Department</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <!-- This will be replaced with the actual chart by JavaScript -->
+                        <div id="departmentChart" style="height: 100%; width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Students Table -->
+    <div class="card mb-4">
+        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Student List</h5>
+            <div class="input-group" style="max-width: 300px;">
+                <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+                <input type="text" class="form-control" id="searchInput" placeholder="Search students...">
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Student</th>
+                            <th>Department</th>
+                            <th>Attendance</th>
+                            <th>GPA</th>
+                            <th>Risk Level</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody">
+                        {% for student in students %}
+                        <tr class="student-row" data-id="{{ student.username }}">
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar me-3">
+                                        <span class="avatar-initial bg-primary text-white rounded-circle">
+                                            {{ student.first_name[0] }}{{ student.last_name[0] }}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">{{ student.first_name }} {{ student.last_name }}</h6>
+                                        <small class="text-muted">{{ student.username }}</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>{{ student.Department }}</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="progress flex-grow-1 me-2" style="height: 6px;">
+                                        {% set attendance_pct = student.Attendance.split('%')[0]|int %}
+                                        <div class="progress-bar bg-{{ 'success' if attendance_pct >= 80 else 'warning' if attendance_pct >= 60 else 'danger' }}" 
+                                             role="progressbar" 
+                                             data-width="{{ attendance_pct }}"
+                                             aria-valuenow="{{ attendance_pct }}" 
+                                             aria-valuemin="0" 
+                                             aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="text-nowrap">{{ student.Attendance }}</span>
+                                </div>
+                            </td>
+                            <td>{{ "%.2f"|format(student.Overall|float) }}</td>
+                            <td>
+                                {% set risk_level = 'High' if student.dropout == 1 else 'Medium' if student.Overall|float < 2.5 else 'Low' %}
+                                <span class="badge risk-badge bg-{{ 'danger' if risk_level == 'High' else 'warning' if risk_level == 'Medium' else 'success' }}">
+                                    {{ risk_level }} Risk
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary view-student" data-id="{{ student.username }}">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer bg-white">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center mb-0">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Export Modal -->
+<div class="modal fade" id="exportModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Export Report</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="exportForm">
+                    <div class="mb-3">
+                        <label for="exportFormat" class="form-label">Format</label>
+                        <select class="form-select" id="exportFormat">
+                            <option value="csv">CSV</option>
+                            <option value="excel">Excel</option>
+                            <option value="pdf">PDF</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exportScope" class="form-label">Scope</label>
+                        <select class="form-select" id="exportScope">
+                            <option value="all">All Students</option>
+                            <option value="at_risk">At-Risk Students Only</option>
+                            <option value="department">By Department</option>
+                        </select>
+                    </div>
+                    <div class="mb-3" id="departmentSelectContainer" style="display: none;">
+                        <label for="exportDepartment" class="form-label">Department</label>
+                        <select class="form-select" id="exportDepartment">
+                            <option value="">Select Department</option>
+                            {% for dept in stats.by_department %}
+                            <option value="{{ dept }}">{{ dept }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="exportBtn">
+                    <i class="fas fa-download me-2"></i>Export
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Plotly.js for charts -->
+<script src="https://cdn.plot.ly/plotly-2.29.1.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Initialize progress bars
+    document.querySelectorAll('.progress-bar[data-width]').forEach(function(progressBar) {
+        const width = progressBar.getAttribute('data-width');
+        progressBar.style.width = width + '%';
+    });
+
+    // Performance Chart
+    if (document.getElementById('performanceChart')) {
+        // Get values from data attributes or use defaults
+        var chartEl = document.getElementById('performanceChart');
+        var attendanceValue = parseFloat(chartEl.getAttribute('data-avg-attendance') || '80');
+        var gpaValue = parseFloat(chartEl.getAttribute('data-avg-gpa') || '3.0');
+        
+        var performanceData = {
+            x: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Current'],
+            attendance: [75, 78, 82, 80, attendanceValue],
+            gpa: [2.8, 2.85, 2.9, 2.95, gpaValue]
+        };
+
+        var layout1 = {
+            title: 'Class Performance Trend',
+            xaxis: { title: 'Week' },
+            yaxis: { title: 'Value' },
+            legend: { orientation: 'h', y: -0.2 },
+            margin: { t: 30, r: 10, l: 50, b: 50 },
+            height: 300
+        };
+
+        Plotly.newPlot('performanceChart', [
+            {
+                x: performanceData.x,
+                y: performanceData.attendance,
+                name: 'Avg. Attendance (%)',
+                type: 'scatter',
+                line: { color: '#4e73df' }
+            },
+            {
+                x: performanceData.x,
+                y: performanceData.gpa.map(function(g) { return g * 10; }), // Scale GPA to match attendance
+                name: 'Avg. GPA (x10)',
+                yaxis: 'y2',
+                type: 'scatter',
+                line: { color: '#1cc88a' }
+            }
+        ], {
+            ...layout1,
+            yaxis2: {
+                title: 'GPA (x10)',
+                overlaying: 'y',
+                side: 'right',
+                showgrid: false
+            }
+        });
+    }
+
+    // Department Chart
+    if (document.getElementById('departmentChart')) {
+        var layout2 = {
+            title: 'Students by Department',
+            showlegend: false,
+            height: 300,
+            margin: { t: 30, r: 10, l: 10, b: 10 }
+        };
+
+        var departmentData = JSON.parse('{{ stats.by_department|tojson|safe }}');
+        var departmentLabels = Object.keys(departmentData);
+        var departmentValues = Object.values(departmentData);
+
+        Plotly.newPlot('departmentChart', [{
+            labels: departmentLabels,
+            values: departmentValues,
+            type: 'pie',
+            hole: 0.4,
+            marker: {
+                colors: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b']
+            }
+        }], layout2);
+    }
+
+    // Search functionality
+    var searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            var searchTerm = this.value.toLowerCase();
+            var rows = document.querySelectorAll('#studentTableBody tr');
+            
+            rows.forEach(function(row) {
+                var text = row.textContent.toLowerCase();
+                row.style.display = text.includes(searchTerm) ? '' : 'none';
+            });
+        });
+    }
+
+    // Show/hide department select based on export scope
+    var exportScope = document.getElementById('exportScope');
+    if (exportScope) {
+        exportScope.addEventListener('change', function() {
+            var deptSelectContainer = document.getElementById('departmentSelectContainer');
+            if (deptSelectContainer) {
+                deptSelectContainer.style.display = this.value === 'department' ? 'block' : 'none';
+            }
+        });
+    }
+
+    // Handle export button click
+    var exportBtn = document.getElementById('exportBtn');
+    if (exportBtn) {
+        exportBtn.addEventListener('click', function() {
+            var format = document.getElementById('exportFormat').value;
+            var scope = document.getElementById('exportScope').value;
+            var url = '/export?format=' + format + '&scope=' + scope;
+            
+            if (scope === 'department') {
+                var dept = document.getElementById('exportDepartment').value;
+                if (dept) {
+                    url += '&department=' + encodeURIComponent(dept);
+                }
+            }
+            
+            // In a real app, this would trigger a file download
+            console.log('Export URL:', url);
+            window.open(url, '_blank');
+            
+            // Close the modal
+            var modal = bootstrap.Modal.getInstance(document.getElementById('exportModal'));
+            if (modal) {
+                modal.hide();
+            }
+        });
+    }
+
+    // Handle student row click
+    document.querySelectorAll('.student-row').forEach(function(row) {
+        row.addEventListener('click', function() {
+            var studentId = this.getAttribute('data-id');
+            // In a real app, this would navigate to the student's detailed view
+            console.log('Viewing student:', studentId);
+            window.location.href = '/student/' + studentId;
+        });
+    });
+});
+</script>
+{% endblock %}

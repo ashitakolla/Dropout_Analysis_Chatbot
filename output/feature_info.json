@@ -1,0 +1,48 @@
+{
+    "feature_names": [
+        "department",
+        "gender",
+        "hsc_score",
+        "ssc_score",
+        "income_level",
+        "hometown",
+        "computer_skills",
+        "study_hours",
+        "gaming_hours",
+        "attendance",
+        "has_job",
+        "english_proficiency",
+        "extracurricular",
+        "current_semester",
+        "last_semester_gpa",
+        "overall_gpa"
+    ],
+    "categorical_features": [
+        "department",
+        "gender",
+        "income_level",
+        "hometown",
+        "computer_skills",
+        "study_hours",
+        "gaming_hours",
+        "attendance",
+        "extracurricular"
+    ],
+    "numerical_features": [
+        "hsc_score",
+        "ssc_score",
+        "english_proficiency",
+        "current_semester",
+        "last_semester_gpa",
+        "overall_gpa"
+    ],
+    "boolean_features": [
+        "has_job"
+    ],
+    "target_variable": "dropout_risk",
+    "model_type": "classifier",
+    "model_version": "1.0.0",
+    "training_date": "2023-01-01",
+    "author": "Your Name",
+    "description": "Student dropout prediction model"
+}

@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+
+{% block title %}Student Dropout Analysis{% endblock %}
+
+{% block extra_css %}
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+        padding: 6rem 0;
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("{{ url_for('static', filename='img/pattern.png') }}");
+        opacity: 0.1;
+        z-index: 0;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .feature-card {
+        border: none;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        height: 100%;
+        border-left: 4px solid #4e73df;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+    
+    .feature-icon {
+        font-size: 2.5rem;
+        color: #4e73df;
+        margin-bottom: 1rem;
+    }
+    
+    .login-card {
+        border: none;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    }
+    
+    .btn-cta {
+        padding: 0.8rem 2rem;
+        font-weight: 600;
+        border-radius: 2rem;
+        transition: all 0.3s;
+    }
+    
+    .btn-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    
+    .section-title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2.5rem;
+    }
+    
+    .section-title::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 50px;
+        height: 3px;
+        background: #4e73df;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content">
+                <h1 class="display-4 fw-bold mb-4">Predict & Prevent Student Dropout</h1>
+                <p class="lead mb-4">Our advanced analytics platform helps identify at-risk students and provides actionable insights to improve retention rates and academic success.</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="{{ url_for('login') }}" class="btn btn-light btn-cta">
+                        <i class="fas fa-sign-in-alt me-2"></i>Login
+                    </a>
+                    <a href="#features" class="btn btn-outline-light btn-cta">
+                        <i class="fas fa-info-circle me-2"></i>Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="{{ url_for('static', filename='img/hero-illustration.svg') }}" alt="Education Illustration" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Key Features</h2>
+            <p class="text-muted">Empowering educators and students with data-driven insights</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="h5">Advanced Analytics</h4>
+                        <p class="text-muted">Leverage machine learning to identify at-risk students with high accuracy based on multiple academic and behavioral factors.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4 class="h5">Personalized Insights</h4>
+                        <p class="text-muted">Students receive tailored recommendations to improve their academic performance and reduce dropout risk.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4 class="h5">Comprehensive Dashboards</h4>
+                        <p class="text-muted">Interactive visualizations help educators track student progress and identify trends across departments and courses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <img src="{{ url_for('static', filename='img/analytics-illustration.svg') }}" alt="Analytics" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="section-title mb-4">How It Works</h2>
+                
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <span class="h4 mb-0">1</span>
+                        </div>
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-1">Data Collection</h5>
+                        <p class="text-muted mb-0">We collect and analyze academic records, attendance, and other relevant student data.</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <span class="h4 mb-0">2</span>
+                        </div>
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-1">Risk Assessment</h5>
+                        <p class="text-muted mb-0">Our machine learning model evaluates each student's risk of dropping out.</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex">
+                    <div class="flex-shrink-0">
+                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <span class="h4 mb-0">3</span>
+                        </div>
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-1">Actionable Insights</h5>
+                        <p class="text-muted mb-0">Receive personalized recommendations to support at-risk students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container py-5 text-center">
+        <h2 class="mb-4">Ready to improve student retention?</h2>
+        <p class="lead mb-4">Join educational institutions that are already making a difference with our platform.</p>
+        <a href="{{ url_for('login') }}" class="btn btn-light btn-cta">
+            <i class="fas fa-rocket me-2"></i>Get Started Today
+        </a>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 70, // Adjust for fixed header
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+{% endblock %}

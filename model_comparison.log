@@ -1,0 +1,40 @@
+2025-09-04 12:49:56,956 - INFO - ModelComparator initialized
+2025-09-04 12:49:56,957 - INFO - Loading data from students.csv
+2025-09-04 12:49:56,968 - INFO - Original dataset shape: (493, 16)
+2025-09-04 12:49:56,981 - INFO - Training set: 394 samples
+2025-09-04 12:49:56,985 - INFO - Test set: 99 samples
+2025-09-04 12:49:56,987 - INFO - Class distribution (train): {0: 0.8096446700507615, 1: 0.19035532994923857}
+2025-09-04 12:49:56,988 - INFO - 
+Evaluating Logistic Regression...
+2025-09-04 12:50:12,164 - INFO - Fitting Logistic Regression on full training data...
+2025-09-04 12:50:12,375 - INFO - Logistic Regression - F1: 0.5334 (±0.0934)
+2025-09-04 12:50:12,378 - INFO - 
+Evaluating Random Forest...
+2025-09-04 12:50:17,810 - INFO - Fitting Random Forest on full training data...
+2025-09-04 12:50:18,796 - INFO - Random Forest - F1: 0.5620 (±0.0657)
+2025-09-04 12:50:18,798 - INFO - 
+Evaluating XGBoost...
+2025-09-04 12:50:20,966 - INFO - XGBoost - F1: 0.5411 (±0.0836)
+2025-09-04 12:50:20,966 - INFO - 
+Evaluating LightGBM...
+2025-09-04 12:50:22,924 - INFO - LightGBM - F1: 0.5456 (±0.0386)
+2025-09-04 12:50:22,928 - INFO - 
+Evaluating CatBoost...
+2025-09-04 12:50:28,896 - INFO - CatBoost - F1: 0.5441 (±0.0479)
+2025-09-04 12:50:28,901 - INFO - Model comparison results saved to model_comparison\model_comparison_results.csv
+2025-09-04 12:50:31,916 - INFO - Model comparison plot saved to model_comparison\model_comparison.png
+2025-09-04 12:50:31,918 - INFO - 
+Evaluating best model (Random Forest) on test set...
+2025-09-04 12:50:32,068 - INFO - 
+Test set evaluation:
+2025-09-04 12:50:32,070 - INFO - accuracy: 0.8081
+2025-09-04 12:50:32,070 - INFO - precision: 0.5000
+2025-09-04 12:50:32,070 - INFO - recall: 0.8421
+2025-09-04 12:50:32,070 - INFO - f1: 0.6275
+2025-09-04 12:50:32,070 - INFO - roc_auc: 0.8385
+2025-09-04 12:50:32,072 - INFO - average_precision: 0.5723
+2025-09-04 12:50:32,241 - INFO - Best model (Random Forest) saved to model_comparison\best_model.pkl
+2025-09-04 12:50:32,243 - INFO - 
+Model comparison completed successfully!
+2025-09-04 12:50:32,243 - INFO - Best model: Random Forest
+2025-09-04 12:50:32,243 - INFO - Test F1 Score: 0.6275

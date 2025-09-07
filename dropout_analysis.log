@@ -1,0 +1,940 @@
+2025-09-04 12:54:27,078 - INFO - DropoutPredictor initialized
+2025-09-04 12:54:27,078 - INFO - Loading data from students.csv
+2025-09-04 12:54:27,087 - INFO - Original dataset shape: (493, 16)
+2025-09-04 12:54:27,103 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 12:54:27,113 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 12:54:27,125 - INFO - Feature engineering completed
+2025-09-04 12:54:27,127 - INFO - Data preprocessing completed
+2025-09-04 12:54:27,131 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 12:54:27,131 - INFO - Training model...
+2025-09-04 12:54:27,131 - INFO - Performing hyperparameter tuning...
+2025-09-04 12:55:04,128 - INFO - Best parameters: {'classifier__n_estimators': 100, 'classifier__min_samples_split': 10, 'classifier__min_samples_leaf': 4, 'classifier__max_features': 'sqrt', 'classifier__max_depth': 5, 'classifier__bootstrap': False}
+2025-09-04 12:55:04,131 - INFO - Best F1 score: 0.5784
+2025-09-04 12:55:06,098 - INFO - 
+Cross-validation results:
+2025-09-04 12:55:06,098 - INFO - accuracy: 0.7894 (+/- 0.0242)
+2025-09-04 12:55:06,100 - INFO - precision: 0.4656 (+/- 0.0436)
+2025-09-04 12:55:06,100 - INFO - recall: 0.6667 (+/- 0.0596)
+2025-09-04 12:55:06,100 - INFO - f1: 0.5469 (+/- 0.0417)
+2025-09-04 12:55:06,102 - INFO - roc_auc: 0.8186 (+/- 0.0465)
+2025-09-04 12:55:06,102 - INFO - average_precision: 0.5168 (+/- 0.0644)
+2025-09-04 12:55:06,102 - INFO - 
+Training final model on full training set...
+2025-09-04 12:55:06,593 - INFO - Selected 30 features
+2025-09-04 12:55:08,466 - ERROR - An error occurred: 'DropoutPredictor' object has no attribute '_optimize_threshold'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 584, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 329, in train_model
+    self.optimal_threshold = self._optimize_threshold(self.y_train, y_pred_proba)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DropoutPredictor' object has no attribute '_optimize_threshold'
+2025-09-04 12:55:51,868 - INFO - DropoutPredictor initialized
+2025-09-04 12:55:51,869 - INFO - Loading data from students.csv
+2025-09-04 12:55:51,877 - INFO - Original dataset shape: (493, 16)
+2025-09-04 12:55:51,882 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 12:55:51,888 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 12:55:51,900 - INFO - Feature engineering completed
+2025-09-04 12:55:51,907 - INFO - Data preprocessing completed
+2025-09-04 12:55:51,916 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 12:55:51,917 - INFO - Training model...
+2025-09-04 12:55:51,918 - INFO - Performing hyperparameter tuning...
+2025-09-04 12:56:36,250 - INFO - Best parameters: {'classifier__n_estimators': 100, 'classifier__min_samples_split': 10, 'classifier__min_samples_leaf': 4, 'classifier__max_features': 'sqrt', 'classifier__max_depth': 5, 'classifier__bootstrap': False}
+2025-09-04 12:56:36,254 - INFO - Best F1 score: 0.5825
+2025-09-04 12:56:38,008 - INFO - 
+Cross-validation results:
+2025-09-04 12:56:38,008 - INFO - accuracy: 0.8046 (+/- 0.0302)
+2025-09-04 12:56:38,008 - INFO - precision: 0.4960 (+/- 0.0565)
+2025-09-04 12:56:38,010 - INFO - recall: 0.6267 (+/- 0.0680)
+2025-09-04 12:56:38,010 - INFO - f1: 0.5506 (+/- 0.0474)
+2025-09-04 12:56:38,011 - INFO - roc_auc: 0.8252 (+/- 0.0401)
+2025-09-04 12:56:38,011 - INFO - average_precision: 0.5318 (+/- 0.0706)
+2025-09-04 12:56:38,012 - INFO - 
+Training final model on full training set...
+2025-09-04 12:56:38,564 - INFO - Selected 30 features
+2025-09-04 12:56:40,907 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-04 12:56:40,907 - INFO - Optimal threshold: 0.3939
+2025-09-04 12:56:40,952 - INFO - Using optimized threshold: 0.3939
+2025-09-04 12:56:41,918 - INFO - 
+Test set evaluation:
+2025-09-04 12:56:41,919 - INFO - accuracy: 0.7677
+2025-09-04 12:56:41,920 - INFO - precision: 0.4412
+2025-09-04 12:56:41,921 - INFO - recall: 0.7895
+2025-09-04 12:56:41,921 - INFO - f1: 0.5660
+2025-09-04 12:56:41,922 - INFO - roc_auc: 0.8586
+2025-09-04 12:56:41,922 - INFO - average_precision: 0.6384
+2025-09-04 12:56:45,072 - INFO - SHAP analysis completed
+2025-09-04 12:56:45,164 - INFO - Model and artifacts saved to output
+2025-09-04 12:56:45,280 - INFO - 
+Process completed successfully!
+2025-09-04 21:28:40,445 - INFO - DropoutPredictor initialized
+2025-09-04 21:28:40,445 - INFO - Loading data from students.csv
+2025-09-04 21:28:40,458 - INFO - Original dataset shape: (493, 16)
+2025-09-04 21:28:40,492 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 21:28:40,504 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 21:28:40,576 - INFO - Feature engineering completed
+2025-09-04 21:28:40,576 - INFO - Data preprocessing completed
+2025-09-04 21:28:40,614 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 21:28:40,617 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 21:28:40,622 - ERROR - An error occurred: TargetEncoder.__init__() got an unexpected keyword argument 'smoothing'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 625, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 238, in train_model
+    pipeline = self._create_pipeline(use_smote)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 176, in _create_pipeline
+    ('target', TargetEncoder(smoothing=2.0)),  # Using target encoding instead of one-hot
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TargetEncoder.__init__() got an unexpected keyword argument 'smoothing'
+2025-09-04 21:30:00,668 - INFO - DropoutPredictor initialized
+2025-09-04 21:30:00,668 - INFO - Loading data from students.csv
+2025-09-04 21:30:00,676 - INFO - Original dataset shape: (493, 16)
+2025-09-04 21:30:00,682 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 21:30:00,685 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 21:30:00,701 - INFO - Feature engineering completed
+2025-09-04 21:30:00,701 - INFO - Data preprocessing completed
+2025-09-04 21:30:00,709 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 21:30:00,714 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 21:30:00,715 - ERROR - An error occurred: TargetEncoder.__init__() got an unexpected keyword argument 'min_samples_leaf'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 625, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 238, in train_model
+    pipeline = self._create_pipeline(use_smote)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 176, in _create_pipeline
+    ('target', TargetEncoder(min_samples_leaf=20)),  # Using target encoding with min_samples_leaf for smoothing
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TargetEncoder.__init__() got an unexpected keyword argument 'min_samples_leaf'
+2025-09-04 21:30:58,405 - INFO - DropoutPredictor initialized
+2025-09-04 21:30:58,405 - INFO - Loading data from students.csv
+2025-09-04 21:30:58,418 - INFO - Original dataset shape: (493, 16)
+2025-09-04 21:30:58,431 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 21:30:58,433 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 21:30:58,446 - INFO - Feature engineering completed
+2025-09-04 21:30:58,450 - INFO - Data preprocessing completed
+2025-09-04 21:30:58,460 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 21:30:58,464 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 21:30:58,514 - ERROR - An error occurred: unhashable type: 'dict'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 626, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 257, in train_model
+    search = BayesSearchCV(
+             ^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\skopt\searchcv.py", line 330, in __init__
+    self._check_search_space(self.search_spaces)
+  File "E:\Python\Lib\site-packages\skopt\searchcv.py", line 402, in _check_search_space
+    check_dimension(v)
+  File "E:\Python\Lib\site-packages\skopt\space\space.py", line 102, in check_dimension
+    old_dim = _check_dimension_old(dimension, transform=transform)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\skopt\space\space.py", line 183, in _check_dimension_old
+    return Categorical(dimension, transform=transform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\skopt\space\space.py", line 796, in __init__
+    self.set_transformer(transform)
+  File "E:\Python\Lib\site-packages\skopt\space\space.py", line 814, in set_transformer
+    self.transformer.fit(self.categories)
+  File "E:\Python\Lib\site-packages\skopt\space\transformers.py", line 110, in fit
+    self.mapping_ = {v: i for i, v in enumerate(X)}
+                     ^^^^
+TypeError: unhashable type: 'dict'
+2025-09-04 21:33:46,282 - INFO - DropoutPredictor initialized
+2025-09-04 21:33:46,282 - INFO - Loading data from students.csv
+2025-09-04 21:33:46,290 - INFO - Original dataset shape: (493, 16)
+2025-09-04 21:33:46,296 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 21:33:46,297 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 21:33:46,316 - INFO - Feature engineering completed
+2025-09-04 21:33:46,316 - INFO - Data preprocessing completed
+2025-09-04 21:33:46,329 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 21:33:46,329 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 21:33:46,362 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-04 21:38:52,797 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-04 21:38:52,797 - INFO - Best F1 score: 0.5764
+2025-09-04 21:38:52,804 - INFO - 
+Training final model with best parameters...
+2025-09-04 21:38:58,564 - INFO - 
+Cross-validation results:
+2025-09-04 21:38:58,615 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-04 21:38:58,647 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-04 21:38:58,698 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-04 21:38:58,745 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-04 21:38:58,759 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-04 21:38:58,763 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-04 21:39:00,297 - WARNING - Could not extract feature names: 'onehot'
+2025-09-04 21:39:01,179 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-04 21:39:01,179 - INFO - Optimal threshold: 0.6878
+2025-09-04 21:39:01,333 - INFO - Using optimized threshold: 0.6878
+2025-09-04 21:39:02,285 - INFO - 
+Test set evaluation:
+2025-09-04 21:39:02,287 - INFO - accuracy: 0.8081
+2025-09-04 21:39:02,288 - INFO - precision: 0.5000
+2025-09-04 21:39:02,290 - INFO - recall: 0.8421
+2025-09-04 21:39:02,290 - INFO - f1: 0.6275
+2025-09-04 21:39:02,290 - INFO - roc_auc: 0.8378
+2025-09-04 21:39:02,292 - INFO - average_precision: 0.4698
+2025-09-04 21:39:03,676 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-04 21:39:03,842 - INFO - Model and artifacts saved to output
+2025-09-04 21:39:04,096 - INFO - 
+Process completed successfully!
+2025-09-04 21:51:06,397 - INFO - DropoutPredictor initialized
+2025-09-04 21:51:06,397 - INFO - Loading data from students.csv
+2025-09-04 21:51:06,510 - INFO - Original dataset shape: (493, 16)
+2025-09-04 21:51:06,519 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 21:51:06,521 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 21:51:06,532 - INFO - Feature engineering completed
+2025-09-04 21:51:06,532 - INFO - Data preprocessing completed
+2025-09-04 21:51:06,541 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 21:51:06,542 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 21:51:06,581 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-04 21:54:13,608 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-04 21:54:13,608 - INFO - Best F1 score: 0.5764
+2025-09-04 21:54:13,612 - INFO - 
+Training final model with best parameters...
+2025-09-04 21:54:18,458 - INFO - 
+Cross-validation results:
+2025-09-04 21:54:18,499 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-04 21:54:18,528 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-04 21:54:18,530 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-04 21:54:18,531 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-04 21:54:18,531 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-04 21:54:18,531 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-04 21:54:19,968 - WARNING - Could not extract feature names: 'onehot'
+2025-09-04 21:54:21,396 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-04 21:54:21,396 - INFO - Optimal threshold: 0.6878
+2025-09-04 21:54:21,517 - INFO - Using optimized threshold: 0.6878
+2025-09-04 21:54:45,035 - ERROR - Error generating visualizations: 'NoneType' object is not subscriptable
+2025-09-04 21:54:45,038 - ERROR - Error during visualization: 'NoneType' object is not subscriptable
+2025-09-04 21:54:45,039 - INFO - 
+Test set evaluation:
+2025-09-04 21:54:45,040 - INFO - accuracy: 0.8081
+2025-09-04 21:54:45,040 - INFO - precision: 0.5000
+2025-09-04 21:54:45,040 - INFO - recall: 0.8421
+2025-09-04 21:54:45,041 - INFO - f1: 0.6275
+2025-09-04 21:54:45,041 - INFO - roc_auc: 0.8378
+2025-09-04 21:54:45,041 - INFO - average_precision: 0.4698
+2025-09-04 21:54:46,088 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-04 21:54:46,228 - INFO - Model and artifacts saved to output
+2025-09-04 21:54:46,663 - INFO - 
+Process completed successfully!
+2025-09-04 22:18:11,420 - INFO - DropoutPredictor initialized
+2025-09-04 22:18:11,420 - INFO - Loading data from students.csv
+2025-09-04 22:18:11,427 - INFO - Original dataset shape: (493, 16)
+2025-09-04 22:18:11,434 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 22:18:11,436 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 22:18:11,450 - INFO - Feature engineering completed
+2025-09-04 22:18:11,453 - INFO - Data preprocessing completed
+2025-09-04 22:18:11,459 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 22:18:11,459 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 22:18:11,489 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-04 22:20:23,663 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-04 22:20:23,663 - INFO - Best F1 score: 0.5764
+2025-09-04 22:20:23,665 - INFO - 
+Training final model with best parameters...
+2025-09-04 22:20:27,388 - INFO - 
+Cross-validation results:
+2025-09-04 22:20:27,388 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-04 22:20:27,389 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-04 22:20:27,389 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-04 22:20:27,389 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-04 22:20:27,389 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-04 22:20:27,389 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-04 22:20:28,418 - WARNING - Could not extract feature names: 'onehot'
+2025-09-04 22:20:29,019 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-04 22:20:29,023 - ERROR - An error occurred: name 'best_threshold' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 948, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 335, in train_model
+    self.optimal_threshold = self._optimize_threshold(self.y_train, y_pred_proba)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 374, in _optimize_threshold
+    return best_threshold
+           ^^^^^^^^^^^^^^
+NameError: name 'best_threshold' is not defined
+2025-09-04 22:23:37,972 - INFO - DropoutPredictor initialized
+2025-09-04 22:23:37,974 - INFO - Loading data from students.csv
+2025-09-04 22:23:37,988 - INFO - Original dataset shape: (493, 16)
+2025-09-04 22:23:37,993 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 22:23:37,995 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 22:23:38,011 - INFO - Feature engineering completed
+2025-09-04 22:23:38,011 - INFO - Data preprocessing completed
+2025-09-04 22:23:38,023 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 22:23:38,024 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 22:23:38,061 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-04 22:26:12,131 - INFO - DropoutPredictor initialized
+2025-09-04 22:26:12,131 - INFO - Loading data from students.csv
+2025-09-04 22:26:12,143 - INFO - Original dataset shape: (493, 16)
+2025-09-04 22:26:12,150 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 22:26:12,153 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 22:26:12,177 - INFO - Feature engineering completed
+2025-09-04 22:26:12,179 - INFO - Data preprocessing completed
+2025-09-04 22:26:12,194 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 22:26:12,205 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 22:26:12,313 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-04 22:28:29,284 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-04 22:28:29,303 - INFO - Best F1 score: 0.5764
+2025-09-04 22:28:29,318 - INFO - 
+Training final model with best parameters...
+2025-09-04 22:28:38,668 - INFO - 
+Cross-validation results:
+2025-09-04 22:28:38,690 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-04 22:28:38,720 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-04 22:28:38,723 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-04 22:28:38,726 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-04 22:28:38,727 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-04 22:28:38,728 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-04 22:28:43,947 - WARNING - Could not extract feature names: 'onehot'
+2025-09-04 22:28:51,194 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-04 22:28:51,210 - INFO - Optimal threshold: 0.7403
+2025-09-04 22:32:59,471 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-04 22:32:59,471 - INFO - Best F1 score: 0.5764
+2025-09-04 22:32:59,471 - INFO - 
+Training final model with best parameters...
+2025-09-04 22:33:05,999 - INFO - 
+Cross-validation results:
+2025-09-04 22:33:06,000 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-04 22:33:06,001 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-04 22:33:06,002 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-04 22:33:06,002 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-04 22:33:06,002 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-04 22:33:06,002 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-04 22:33:07,885 - WARNING - Could not extract feature names: 'onehot'
+2025-09-04 22:33:09,057 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-04 22:33:09,057 - INFO - Optimal threshold: 0.7403
+2025-09-04 22:33:09,198 - INFO - Using optimized threshold: 0.7403
+2025-09-04 22:33:09,221 - INFO - Generating ROC curve...
+2025-09-04 22:33:10,572 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-04 22:33:10,573 - INFO - Generating Precision-Recall curve...
+2025-09-04 22:33:11,921 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-04 22:33:11,921 - INFO - Generating Confusion Matrix...
+2025-09-04 22:33:13,255 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-04 22:33:13,255 - INFO - Generating Feature Importance plot...
+2025-09-04 22:33:13,255 - WARNING - Feature importance not available for this model
+2025-09-04 22:33:13,255 - INFO - Generating SHAP summary plot...
+2025-09-04 22:33:13,313 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-04 22:33:13,313 - INFO - Generating Threshold Optimization plot...
+2025-09-04 22:33:14,176 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-04 22:33:14,177 - INFO - Generating Calibration plot...
+2025-09-04 22:33:15,244 - INFO - Saved calibration curve to output\calibration_curve.png
+2025-09-04 22:33:15,244 - INFO - Generating Class Distribution plot...
+2025-09-04 22:33:16,204 - INFO - Saved class distribution plot to output\class_distribution.png
+2025-09-04 22:33:16,205 - INFO - Generating Correlation Heatmap...
+2025-09-04 22:33:16,205 - WARNING - Could not create correlation heatmap: object of type 'NoneType' has no len()
+2025-09-04 22:33:16,205 - INFO - All visualizations generated successfully!
+2025-09-04 22:33:16,205 - INFO - 
+Test set evaluation:
+2025-09-04 22:33:16,205 - INFO - accuracy: 0.8081
+2025-09-04 22:33:16,206 - INFO - precision: 0.5000
+2025-09-04 22:33:16,206 - INFO - recall: 0.8421
+2025-09-04 22:33:16,207 - INFO - f1: 0.6275
+2025-09-04 22:33:16,207 - INFO - roc_auc: 0.8378
+2025-09-04 22:33:16,207 - INFO - average_precision: 0.4698
+2025-09-04 22:33:18,542 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-04 22:33:20,489 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-04 22:33:21,672 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-04 22:33:21,731 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-04 22:33:22,027 - INFO - Model and artifacts saved to output
+2025-09-04 22:33:22,412 - INFO - 
+Process completed successfully!
+2025-09-04 23:57:32,693 - INFO - DropoutPredictor initialized with recall-focused configuration
+2025-09-04 23:57:32,695 - INFO - Loading data from students.csv
+2025-09-04 23:57:32,708 - INFO - Original dataset shape: (493, 16)
+2025-09-04 23:57:32,717 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-04 23:57:32,720 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-04 23:57:32,735 - INFO - Feature engineering completed
+2025-09-04 23:57:32,736 - INFO - Data preprocessing completed
+2025-09-04 23:57:32,747 - INFO - Data split into training (394) and test (99) sets
+2025-09-04 23:57:32,747 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-04 23:57:32,779 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-05 00:05:21,492 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-05 00:05:21,492 - INFO - Best F1 score: 0.5764
+2025-09-05 00:05:21,499 - INFO - 
+Training final model with best parameters...
+2025-09-05 00:05:27,265 - INFO - 
+Cross-validation results:
+2025-09-05 00:05:27,269 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-05 00:05:27,272 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-05 00:05:27,277 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-05 00:05:27,277 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-05 00:05:27,279 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-05 00:05:27,280 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-05 00:05:29,711 - WARNING - Could not extract feature names: 'onehot'
+2025-09-05 00:05:32,241 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:05:32,243 - INFO - Optimal threshold: 0.4003
+2025-09-05 00:05:32,569 - INFO - Using optimized threshold: 0.4003
+2025-09-05 00:05:32,711 - INFO - Generating ROC curve...
+2025-09-05 00:05:36,130 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-05 00:05:36,130 - INFO - Generating Precision-Recall curve...
+2025-09-05 00:05:38,526 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-05 00:05:38,530 - INFO - Generating Confusion Matrix...
+2025-09-05 00:05:40,215 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-05 00:05:40,216 - INFO - Generating Feature Importance plot...
+2025-09-05 00:05:40,217 - WARNING - Feature importance not available for this model
+2025-09-05 00:05:40,219 - INFO - Generating SHAP summary plot...
+2025-09-05 00:05:40,303 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-05 00:05:40,303 - INFO - Generating Threshold Optimization plot...
+2025-09-05 00:05:41,927 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:05:41,927 - INFO - Generating Calibration plot...
+2025-09-05 00:05:43,014 - INFO - Saved calibration curve to output\calibration_curve.png
+2025-09-05 00:05:43,014 - INFO - Generating Class Distribution plot...
+2025-09-05 00:05:44,049 - INFO - Saved class distribution plot to output\class_distribution.png
+2025-09-05 00:05:44,050 - INFO - Generating Correlation Heatmap...
+2025-09-05 00:05:44,050 - WARNING - Could not create correlation heatmap: object of type 'NoneType' has no len()
+2025-09-05 00:05:44,052 - INFO - All visualizations generated successfully!
+2025-09-05 00:05:44,055 - INFO - 
+Test set evaluation:
+2025-09-05 00:05:44,055 - INFO - accuracy: 0.6263
+2025-09-05 00:05:44,055 - INFO - precision: 0.3200
+2025-09-05 00:05:44,055 - INFO - recall: 0.8421
+2025-09-05 00:05:44,055 - INFO - f1: 0.4638
+2025-09-05 00:05:44,057 - INFO - roc_auc: 0.8378
+2025-09-05 00:05:44,057 - INFO - average_precision: 0.4698
+2025-09-05 00:05:45,332 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-05 00:05:47,229 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-05 00:05:49,099 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-05 00:05:49,175 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-05 00:05:49,539 - INFO - Model and artifacts saved to output
+2025-09-05 00:05:49,990 - INFO - 
+Process completed successfully!
+2025-09-05 00:07:01,561 - INFO - DropoutPredictor initialized with recall-focused configuration
+2025-09-05 00:07:01,564 - INFO - Loading data from students.csv
+2025-09-05 00:07:01,702 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:07:01,888 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:07:01,902 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:07:01,995 - INFO - Feature engineering completed
+2025-09-05 00:07:02,001 - INFO - Data preprocessing completed
+2025-09-05 00:07:02,030 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:07:02,036 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-05 00:07:02,175 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-05 00:13:40,110 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-05 00:13:40,111 - INFO - Best F1 score: 0.5764
+2025-09-05 00:13:40,115 - INFO - 
+Training final model with best parameters...
+2025-09-05 00:13:51,624 - INFO - 
+Cross-validation results:
+2025-09-05 00:13:51,707 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-05 00:13:51,715 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-05 00:13:51,716 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-05 00:13:51,716 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-05 00:13:51,717 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-05 00:13:51,718 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-05 00:13:54,999 - WARNING - Could not extract feature names: 'onehot'
+2025-09-05 00:13:56,789 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:13:56,791 - INFO - Optimal threshold: 0.4003
+2025-09-05 00:13:56,983 - INFO - Using optimized threshold: 0.4003
+2025-09-05 00:13:57,011 - INFO - Generating ROC curve...
+2025-09-05 00:13:59,683 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-05 00:13:59,683 - INFO - Generating Precision-Recall curve...
+2025-09-05 00:14:02,056 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-05 00:14:02,057 - INFO - Generating Confusion Matrix...
+2025-09-05 00:14:04,086 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-05 00:14:04,088 - INFO - Generating Feature Importance plot...
+2025-09-05 00:14:04,088 - WARNING - Feature importance not available for this model
+2025-09-05 00:14:04,089 - INFO - Generating SHAP summary plot...
+2025-09-05 00:14:04,181 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-05 00:14:04,184 - INFO - Generating Threshold Optimization plot...
+2025-09-05 00:14:06,035 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:14:06,035 - INFO - Generating Calibration plot...
+2025-09-05 00:14:07,841 - INFO - Saved calibration curve to output\calibration_curve.png
+2025-09-05 00:14:07,841 - INFO - Generating Class Distribution plot...
+2025-09-05 00:14:09,047 - INFO - Saved class distribution plot to output\class_distribution.png
+2025-09-05 00:14:09,048 - INFO - Generating Correlation Heatmap...
+2025-09-05 00:14:09,048 - WARNING - Could not create correlation heatmap: object of type 'NoneType' has no len()
+2025-09-05 00:14:09,049 - INFO - All visualizations generated successfully!
+2025-09-05 00:14:09,049 - INFO - 
+Test set evaluation:
+2025-09-05 00:14:09,050 - INFO - accuracy: 0.6263
+2025-09-05 00:14:09,050 - INFO - precision: 0.3200
+2025-09-05 00:14:09,050 - INFO - recall: 0.8421
+2025-09-05 00:14:09,050 - INFO - f1: 0.4638
+2025-09-05 00:14:09,050 - INFO - roc_auc: 0.8378
+2025-09-05 00:14:09,050 - INFO - average_precision: 0.4698
+2025-09-05 00:14:11,038 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-05 00:14:13,635 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-05 00:14:16,055 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-05 00:14:16,142 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-05 00:14:16,416 - INFO - Model and artifacts saved to output
+2025-09-05 00:14:17,223 - INFO - 
+Process completed successfully!
+2025-09-05 00:16:09,187 - INFO - DropoutPredictor initialized
+2025-09-05 00:16:09,188 - INFO - Loading data from students.csv
+2025-09-05 00:16:09,195 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:16:09,205 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:16:09,207 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:16:09,223 - INFO - Feature engineering completed
+2025-09-05 00:16:09,226 - INFO - Data preprocessing completed
+2025-09-05 00:16:09,239 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:16:09,239 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-05 00:16:09,295 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-05 00:21:23,138 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-05 00:21:23,180 - INFO - Best F1 score: 0.5764
+2025-09-05 00:21:23,241 - INFO - 
+Training final model with best parameters...
+2025-09-05 00:21:34,526 - INFO - 
+Cross-validation results:
+2025-09-05 00:21:34,529 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-05 00:21:34,537 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-05 00:21:34,540 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-05 00:21:34,543 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-05 00:21:34,544 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-05 00:21:34,548 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-05 00:21:37,380 - WARNING - Could not extract feature names: 'onehot'
+2025-09-05 00:21:39,829 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:21:39,829 - INFO - Optimal threshold: 0.7403
+2025-09-05 00:25:36,777 - INFO - DropoutPredictor initialized
+2025-09-05 00:25:36,779 - INFO - Loading data from students.csv
+2025-09-05 00:25:36,802 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:25:36,815 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:25:36,822 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:25:36,840 - INFO - Feature engineering completed
+2025-09-05 00:25:36,842 - INFO - Data preprocessing completed
+2025-09-05 00:25:36,889 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:25:36,895 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-05 00:25:36,907 - ERROR - An error occurred: 'DropoutPredictor' object has no attribute '_create_pipeline'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 944, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 207, in train_model
+    pipeline = self._create_pipeline(use_smote)
+               ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DropoutPredictor' object has no attribute '_create_pipeline'
+2025-09-05 00:30:10,009 - INFO - DropoutPredictor initialized
+2025-09-05 00:30:10,027 - INFO - Loading data from students.csv
+2025-09-05 00:30:10,202 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:30:10,303 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:30:10,392 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:30:10,574 - INFO - Feature engineering completed
+2025-09-05 00:30:10,589 - INFO - Data preprocessing completed
+2025-09-05 00:30:10,642 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:30:10,643 - INFO - Training enhanced model with SMOTE: True...
+2025-09-05 00:30:10,643 - ERROR - An error occurred: 'DropoutPredictor' object has no attribute '_get_numeric_features'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 970, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 231, in train_model
+    pipeline = self._get_model_pipeline(use_smote=use_smote)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 186, in _get_model_pipeline
+    ('num', numeric_transformer, self._get_numeric_features()),
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DropoutPredictor' object has no attribute '_get_numeric_features'
+2025-09-05 00:35:00,662 - INFO - DropoutPredictor initialized
+2025-09-05 00:35:00,665 - INFO - Loading data from students.csv
+2025-09-05 00:35:00,673 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:35:00,685 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:35:00,686 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:35:00,699 - INFO - Feature engineering completed
+2025-09-05 00:35:00,701 - INFO - Data preprocessing completed
+2025-09-05 00:35:00,706 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:35:00,706 - ERROR - An error occurred: DropoutPredictor.train_model() got an unexpected keyword argument 'use_smote'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 917, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: DropoutPredictor.train_model() got an unexpected keyword argument 'use_smote'
+2025-09-05 00:36:30,895 - INFO - DropoutPredictor initialized
+2025-09-05 00:36:30,898 - INFO - Loading data from students.csv
+2025-09-05 00:36:30,906 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:36:30,913 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:36:30,914 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:36:30,929 - INFO - Feature engineering completed
+2025-09-05 00:36:30,929 - INFO - Data preprocessing completed
+2025-09-05 00:36:30,937 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:36:30,937 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-05 00:36:30,937 - ERROR - An error occurred: 'DropoutPredictor' object has no attribute '_get_numeric_features'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 944, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 207, in train_model
+    pipeline = self._get_model_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 179, in _get_model_pipeline
+    ('num', numeric_transformer, self._get_numeric_features()),
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DropoutPredictor' object has no attribute '_get_numeric_features'
+2025-09-05 00:36:50,462 - INFO - DropoutPredictor initialized
+2025-09-05 00:36:50,462 - INFO - Loading data from students.csv
+2025-09-05 00:36:50,475 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:36:50,479 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:36:50,481 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:36:50,494 - INFO - Feature engineering completed
+2025-09-05 00:36:50,494 - INFO - Data preprocessing completed
+2025-09-05 00:36:50,497 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:36:50,497 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-05 00:36:50,499 - ERROR - An error occurred: 'DropoutPredictor' object has no attribute '_create_pipeline'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 944, in main
+    cv_results = predictor.train_model(use_smote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot\dropout_analysis_enhanced.py", line 207, in train_model
+    pipeline = self._create_pipeline(use_smote)
+               ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DropoutPredictor' object has no attribute '_create_pipeline'
+2025-09-05 00:39:52,312 - INFO - DropoutPredictor initialized with recall-focused configuration
+2025-09-05 00:39:52,314 - INFO - Loading data from students.csv
+2025-09-05 00:39:52,323 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:39:52,332 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:39:52,334 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:39:52,343 - INFO - Feature engineering completed
+2025-09-05 00:39:52,347 - INFO - Data preprocessing completed
+2025-09-05 00:39:52,354 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:39:52,354 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-05 00:39:52,406 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-05 00:43:24,780 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-05 00:43:24,782 - INFO - Best F1 score: 0.5764
+2025-09-05 00:43:24,783 - INFO - 
+Training final model with best parameters...
+2025-09-05 00:43:30,269 - INFO - 
+Cross-validation results:
+2025-09-05 00:43:30,269 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-05 00:43:30,270 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-05 00:43:30,271 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-05 00:43:30,271 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-05 00:43:30,273 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-05 00:43:30,274 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-05 00:43:31,696 - WARNING - Could not extract feature names: 'onehot'
+2025-09-05 00:43:32,515 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:43:32,517 - INFO - Optimal threshold: 0.4003
+2025-09-05 00:43:32,653 - INFO - Using optimized threshold: 0.4003
+2025-09-05 00:43:32,668 - INFO - Generating ROC curve...
+2025-09-05 00:43:33,850 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-05 00:43:33,851 - INFO - Generating Precision-Recall curve...
+2025-09-05 00:43:34,992 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-05 00:43:34,992 - INFO - Generating Confusion Matrix...
+2025-09-05 00:43:35,865 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-05 00:43:35,866 - INFO - Generating Feature Importance plot...
+2025-09-05 00:43:35,867 - WARNING - Feature importance not available for this model
+2025-09-05 00:43:35,867 - INFO - Generating SHAP summary plot...
+2025-09-05 00:43:35,921 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-05 00:43:35,921 - INFO - Generating Threshold Optimization plot...
+2025-09-05 00:43:36,725 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:43:36,725 - INFO - Generating Calibration plot...
+2025-09-05 00:43:37,552 - INFO - Saved calibration curve to output\calibration_curve.png
+2025-09-05 00:43:37,553 - INFO - Generating Class Distribution plot...
+2025-09-05 00:43:38,235 - INFO - Saved class distribution plot to output\class_distribution.png
+2025-09-05 00:43:38,235 - INFO - Generating Correlation Heatmap...
+2025-09-05 00:43:38,235 - WARNING - Could not create correlation heatmap: object of type 'NoneType' has no len()
+2025-09-05 00:43:38,235 - INFO - All visualizations generated successfully!
+2025-09-05 00:43:38,235 - INFO - 
+Test set evaluation:
+2025-09-05 00:43:38,235 - INFO - accuracy: 0.6667
+2025-09-05 00:43:38,237 - INFO - precision: 0.3478
+2025-09-05 00:43:38,237 - INFO - recall: 0.8421
+2025-09-05 00:43:38,237 - INFO - f1: 0.4923
+2025-09-05 00:43:38,238 - INFO - roc_auc: 0.8378
+2025-09-05 00:43:38,238 - INFO - average_precision: 0.4698
+2025-09-05 00:43:39,131 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-05 00:43:40,152 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-05 00:43:41,179 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-05 00:43:41,244 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-05 00:43:41,482 - INFO - Model and artifacts saved to output
+2025-09-05 00:43:41,798 - INFO - 
+Process completed successfully!
+2025-09-05 00:45:10,052 - INFO - DropoutPredictor initialized
+2025-09-05 00:45:10,053 - INFO - Loading data from students.csv
+2025-09-05 00:45:10,063 - INFO - Original dataset shape: (493, 16)
+2025-09-05 00:45:10,072 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-05 00:45:10,074 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-05 00:45:10,089 - INFO - Feature engineering completed
+2025-09-05 00:45:10,089 - INFO - Data preprocessing completed
+2025-09-05 00:45:10,101 - INFO - Data split into training (394) and test (99) sets
+2025-09-05 00:45:10,187 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-05 00:45:10,291 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-05 00:49:04,027 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-05 00:49:04,029 - INFO - Best F1 score: 0.5764
+2025-09-05 00:49:04,031 - INFO - 
+Training final model with best parameters...
+2025-09-05 00:49:09,645 - INFO - 
+Cross-validation results:
+2025-09-05 00:49:09,645 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-05 00:49:09,647 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-05 00:49:09,648 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-05 00:49:09,649 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-05 00:49:09,650 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-05 00:49:09,650 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-05 00:49:11,501 - WARNING - Could not extract feature names: 'onehot'
+2025-09-05 00:49:12,516 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:49:12,518 - INFO - Optimal threshold: 0.7403
+2025-09-05 00:49:12,659 - INFO - Using optimized threshold: 0.7403
+2025-09-05 00:49:12,680 - INFO - Generating ROC curve...
+2025-09-05 00:49:13,950 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-05 00:49:13,950 - INFO - Generating Precision-Recall curve...
+2025-09-05 00:49:15,427 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-05 00:49:15,429 - INFO - Generating Confusion Matrix...
+2025-09-05 00:49:16,439 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-05 00:49:16,440 - INFO - Generating Feature Importance plot...
+2025-09-05 00:49:16,440 - WARNING - Feature importance not available for this model
+2025-09-05 00:49:16,442 - INFO - Generating SHAP summary plot...
+2025-09-05 00:49:16,515 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-05 00:49:16,515 - INFO - Generating Threshold Optimization plot...
+2025-09-05 00:49:17,381 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-05 00:49:17,381 - INFO - Generating Calibration plot...
+2025-09-05 00:49:18,285 - INFO - Saved calibration curve to output\calibration_curve.png
+2025-09-05 00:49:18,285 - INFO - Generating Class Distribution plot...
+2025-09-05 00:49:19,031 - INFO - Saved class distribution plot to output\class_distribution.png
+2025-09-05 00:49:19,031 - INFO - Generating Correlation Heatmap...
+2025-09-05 00:49:19,031 - WARNING - Could not create correlation heatmap: object of type 'NoneType' has no len()
+2025-09-05 00:49:19,034 - INFO - All visualizations generated successfully!
+2025-09-05 00:49:19,034 - INFO - 
+Test set evaluation:
+2025-09-05 00:49:19,034 - INFO - accuracy: 0.8081
+2025-09-05 00:49:19,034 - INFO - precision: 0.5000
+2025-09-05 00:49:19,034 - INFO - recall: 0.8421
+2025-09-05 00:49:19,034 - INFO - f1: 0.6275
+2025-09-05 00:49:19,035 - INFO - roc_auc: 0.8378
+2025-09-05 00:49:19,035 - INFO - average_precision: 0.4698
+2025-09-05 00:49:20,018 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-05 00:49:21,207 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-05 00:49:22,298 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-05 00:49:22,365 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-05 00:49:22,589 - INFO - Model and artifacts saved to output
+2025-09-05 00:49:22,895 - INFO - 
+Process completed successfully!
+2025-09-06 13:16:24,850 - INFO - DropoutPredictor initialized
+2025-09-06 13:16:24,851 - INFO - Loading data from students.csv
+2025-09-06 13:16:25,095 - INFO - Original dataset shape: (493, 16)
+2025-09-06 13:16:25,218 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-06 13:16:25,325 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-06 13:16:25,355 - INFO - Feature engineering completed
+2025-09-06 13:16:25,361 - INFO - Data preprocessing completed
+2025-09-06 13:16:25,405 - INFO - Data split into training (394) and test (99) sets
+2025-09-06 13:16:25,408 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-06 13:16:25,475 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-06 13:18:56,614 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-06 13:18:56,615 - INFO - Best F1 score: 0.5764
+2025-09-06 13:18:56,617 - INFO - 
+Training final model with best parameters...
+2025-09-06 13:19:01,326 - INFO - 
+Cross-validation results:
+2025-09-06 13:19:01,326 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-06 13:19:01,330 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-06 13:19:01,331 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-06 13:19:01,333 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-06 13:19:01,335 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-06 13:19:01,336 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-06 13:19:03,269 - WARNING - Could not extract feature names: 'onehot'
+2025-09-06 13:19:07,014 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-06 13:19:07,014 - INFO - Optimal threshold: 0.7403
+2025-09-06 13:20:34,321 - INFO - DropoutPredictor initialized
+2025-09-06 13:20:34,322 - INFO - Loading data from students.csv
+2025-09-06 13:20:34,331 - INFO - Original dataset shape: (493, 16)
+2025-09-06 13:20:34,336 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-06 13:20:34,347 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-06 13:20:34,357 - INFO - Feature engineering completed
+2025-09-06 13:20:34,357 - INFO - Data preprocessing completed
+2025-09-06 13:20:34,360 - INFO - Data split into training (394) and test (99) sets
+2025-09-06 13:20:34,360 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-06 13:20:34,380 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-06 13:22:52,438 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-06 13:22:52,438 - INFO - Best F1 score: 0.5764
+2025-09-06 13:22:52,440 - INFO - 
+Training final model with best parameters...
+2025-09-06 13:22:55,620 - INFO - 
+Cross-validation results:
+2025-09-06 13:22:55,621 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-06 13:22:55,622 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-06 13:22:55,624 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-06 13:22:55,626 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-06 13:22:55,626 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-06 13:22:55,628 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-06 13:22:56,651 - WARNING - Could not extract feature names: 'onehot'
+2025-09-06 13:22:57,177 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-06 13:22:57,177 - INFO - Optimal threshold: 0.7403
+2025-09-06 13:22:57,259 - INFO - Using optimized threshold: 0.7403
+2025-09-06 13:22:57,270 - INFO - Generating ROC curve...
+2025-09-06 13:22:57,986 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-06 13:22:57,986 - INFO - Generating Precision-Recall curve...
+2025-09-06 13:22:58,740 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-06 13:22:58,740 - INFO - Generating Confusion Matrix...
+2025-09-06 13:22:59,262 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-06 13:22:59,262 - INFO - Generating Feature Importance plot...
+2025-09-06 13:22:59,263 - WARNING - Feature importance not available for this model
+2025-09-06 13:22:59,263 - INFO - Generating SHAP summary plot...
+2025-09-06 13:22:59,297 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-06 13:22:59,297 - INFO - Generating Threshold Optimization plot...
+2025-09-06 13:22:59,769 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-06 13:22:59,769 - INFO - Generating Calibration plot...
+2025-09-06 13:23:00,237 - INFO - Saved calibration curve to output\calibration_curve.png
+2025-09-06 13:23:00,237 - INFO - Generating Class Distribution plot...
+2025-09-06 13:23:00,919 - INFO - Saved class distribution plot to output\class_distribution.png
+2025-09-06 13:23:00,923 - INFO - Generating Correlation Heatmap...
+2025-09-06 13:23:00,923 - WARNING - Could not create correlation heatmap: object of type 'NoneType' has no len()
+2025-09-06 13:23:00,923 - INFO - All visualizations generated successfully!
+2025-09-06 13:23:00,924 - INFO - 
+Test set evaluation:
+2025-09-06 13:23:00,924 - INFO - accuracy: 0.8081
+2025-09-06 13:23:00,924 - INFO - precision: 0.5000
+2025-09-06 13:23:00,925 - INFO - recall: 0.8421
+2025-09-06 13:23:00,926 - INFO - f1: 0.6275
+2025-09-06 13:23:00,926 - INFO - roc_auc: 0.8378
+2025-09-06 13:23:00,926 - INFO - average_precision: 0.4698
+2025-09-06 13:23:01,545 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-06 13:23:02,286 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-06 13:23:02,906 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-06 13:23:02,941 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-06 13:23:03,062 - INFO - Model and artifacts saved to output
+2025-09-06 13:23:03,340 - INFO - 
+Process completed successfully!
+2025-09-06 20:22:22,923 - INFO - DropoutPredictor initialized
+2025-09-06 20:22:22,926 - INFO - Loading data from students.csv
+2025-09-06 20:22:23,037 - INFO - Original dataset shape: (493, 16)
+2025-09-06 20:22:23,048 - INFO - Class distribution:
+dropout
+0    0.809331
+1    0.190669
+Name: proportion, dtype: float64
+2025-09-06 20:22:23,054 - INFO - Removed potentially leaky columns: ['Attendance', 'Overall', 'Last', 'Semester']
+2025-09-06 20:22:23,071 - INFO - Feature engineering completed
+2025-09-06 20:22:23,073 - INFO - Data preprocessing completed
+2025-09-06 20:22:23,107 - INFO - Data split into training (394) and test (99) sets
+2025-09-06 20:22:23,108 - INFO - Training enhanced model with improved feature engineering and tuning...
+2025-09-06 20:22:23,137 - INFO - Starting hyperparameter tuning with Bayesian optimization...
+2025-09-06 20:26:15,754 - INFO - Best parameters: OrderedDict({'classifier__ccp_alpha': 0.044483251230115185, 'classifier__max_depth': 14, 'classifier__max_features': 'sqrt', 'classifier__max_leaf_nodes': 49, 'classifier__min_impurity_decrease': 0.03759103727346972, 'classifier__min_samples_leaf': 5, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 250, 'smote__k_neighbors': 5, 'smote__sampling_strategy': 0.7})
+2025-09-06 20:26:15,754 - INFO - Best F1 score: 0.5764
+2025-09-06 20:26:15,756 - INFO - 
+Training final model with best parameters...
+2025-09-06 20:26:20,903 - INFO - 
+Cross-validation results:
+2025-09-06 20:26:20,904 - INFO - accuracy: 0.7640 (+/- 0.0410)
+2025-09-06 20:26:20,904 - INFO - precision: 0.4334 (+/- 0.0569)
+2025-09-06 20:26:20,904 - INFO - recall: 0.7467 (+/- 0.1067)
+2025-09-06 20:26:20,905 - INFO - f1: 0.5467 (+/- 0.0675)
+2025-09-06 20:26:20,906 - INFO - roc_auc: 0.8156 (+/- 0.0368)
+2025-09-06 20:26:20,906 - INFO - average_precision: 0.4469 (+/- 0.0624)
+2025-09-06 20:26:22,366 - WARNING - Could not extract feature names: 'onehot'
+2025-09-06 20:26:23,346 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-06 20:26:23,346 - INFO - Optimal threshold: 0.7403
+2025-09-06 20:26:23,461 - INFO - Using optimized threshold: 0.7403
+2025-09-06 20:26:23,483 - INFO - Generating ROC curve...
+2025-09-06 20:26:24,440 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-06 20:26:24,440 - INFO - Generating Precision-Recall curve...
+2025-09-06 20:26:25,370 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-06 20:26:25,371 - INFO - Generating Confusion Matrix...
+2025-09-06 20:26:26,085 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-06 20:26:26,085 - INFO - Generating Feature Importance plot...
+2025-09-06 20:26:26,085 - WARNING - Feature importance not available for this model
+2025-09-06 20:26:26,088 - INFO - Generating SHAP summary plot...
+2025-09-06 20:26:26,126 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-06 20:26:26,127 - INFO - Generating Threshold Optimization plot...
+2025-09-06 20:26:27,008 - INFO - Saved threshold optimization plot to output\threshold_optimization.png
+2025-09-06 20:26:27,009 - INFO - Generating Calibration plot...
+2025-09-06 20:26:27,791 - INFO - Saved calibration curve to output\calibration_curve.png
+2025-09-06 20:26:27,792 - INFO - Generating Class Distribution plot...
+2025-09-06 20:26:28,358 - INFO - Saved class distribution plot to output\class_distribution.png
+2025-09-06 20:26:28,359 - INFO - Generating Correlation Heatmap...
+2025-09-06 20:26:28,359 - WARNING - Could not create correlation heatmap: object of type 'NoneType' has no len()
+2025-09-06 20:26:28,360 - INFO - All visualizations generated successfully!
+2025-09-06 20:26:28,361 - INFO - 
+Test set evaluation:
+2025-09-06 20:26:28,361 - INFO - accuracy: 0.8081
+2025-09-06 20:26:28,361 - INFO - precision: 0.5000
+2025-09-06 20:26:28,364 - INFO - recall: 0.8421
+2025-09-06 20:26:28,364 - INFO - f1: 0.6275
+2025-09-06 20:26:28,365 - INFO - roc_auc: 0.8378
+2025-09-06 20:26:28,365 - INFO - average_precision: 0.4698
+2025-09-06 20:26:29,086 - INFO - Saved confusion matrix to output\confusion_matrix.png
+2025-09-06 20:26:30,017 - INFO - Saved ROC curve to output\roc_curve.png
+2025-09-06 20:26:30,824 - INFO - Saved precision-recall curve to output\precision_recall_curve.png
+2025-09-06 20:26:30,875 - WARNING - SHAP analysis failed: 'feature_selector'
+2025-09-06 20:26:31,033 - INFO - Model and artifacts saved to output
+2025-09-06 20:26:31,334 - INFO - 
+Process completed successfully!

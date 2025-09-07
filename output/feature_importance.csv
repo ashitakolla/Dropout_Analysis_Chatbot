@@ -1,0 +1,31 @@
+feature,importance
+Gaming_More than 3 Hours,0.18822436427730838
+Preparation_0-1 Hour,0.1419847672505717
+English_4,0.12173951155065174
+Gaming_2-3 Hours,0.09855437699896875
+Preparation_2-3 Hours,0.06645286224595714
+Gender_Female,0.06375132402327531
+HSC_SSC_ratio,0.043277959753961544
+Extra_No,0.04082904227004746
+Extra_Yes,0.03684355702634062
+Computer_5,0.031032075898158522
+"Income_Upper middle (30,000-50,000)",0.02798475096040489
+English_5,0.02694128892393002
+Gaming_0-1 Hour,0.019452477689359336
+Preparation_More than 3 Hours,0.018184668946137978
+"Income_High (Above 50,000)",0.016599290893101887
+Computer_4,0.013261160551431572
+Hometown_City,0.013100455958107394
+Department_Computer Science and Engineering,0.010568553583692793
+"Income_Lower middle (15,000-30,000)",0.008748188317112111
+"Income_Low (Below 15,000)",0.005765973579420333
+"Income_High (Above 50,000) ",0.0050624932452386
+"Income_Low (Below 15,000) ",0.001079683286984964
+Department_English,0.00031904056180755505
+"Income_Lower middle (15,000-30,000) ",0.00017108858323474396
+"Department_Journalism, Communication and Media Studies",6.0399636878598154e-05
+Department_Sociology,1.0643987915997065e-05
+Department_Law and Human Rights,0.0
+"Income_High (Above 50,000)  ",0.0
+"Income_Lower middle (15,000-30,000)  ",0.0
+"Income_Upper middle (30,000-50,000) ",0.0

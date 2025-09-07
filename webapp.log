@@ -1,0 +1,850 @@
+2025-09-06 23:57:06,600 - webapp.app - ERROR - Error loading user data: name 'hashlib' is not defined
+2025-09-06 23:57:06,632 - webapp.app - ERROR - Error loading the model: [Errno 2] No such file or directory: 'output\\best_model.pkl'
+2025-09-06 23:57:06,833 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-06 23:57:06,904 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-06 23:57:12,504 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:12] "GET / HTTP/1.1" 200 -
+2025-09-06 23:57:12,731 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:12] "[33mGET /static/img/hero-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-06 23:57:12,741 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:12] "[33mGET /static/img/analytics-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-06 23:57:12,755 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-09-06 23:57:12,855 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:12] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-09-06 23:57:14,155 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:14] "[33mGET /static/img/pattern.png HTTP/1.1[0m" 404 -
+2025-09-06 23:57:15,187 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-06 23:57:23,038 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:23] "GET /login HTTP/1.1" 200 -
+2025-09-06 23:57:23,089 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-06 23:57:23,119 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-06 23:57:40,822 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:40] "POST /login HTTP/1.1" 200 -
+2025-09-06 23:57:40,874 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-06 23:57:40,876 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:57:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-06 23:58:00,432 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:58:00] "POST /login HTTP/1.1" 200 -
+2025-09-06 23:58:00,510 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:58:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-06 23:58:00,524 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:58:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-06 23:58:16,123 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:58:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-06 23:58:16,183 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:58:16] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-06 23:59:23,279 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:59:23] "POST /login HTTP/1.1" 200 -
+2025-09-06 23:59:23,361 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:59:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-06 23:59:23,476 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:59:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-06 23:59:23,478 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 23:59:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:00:29,223 - webapp.app - ERROR - Error loading the model: [Errno 2] No such file or directory: 'output\\best_model.pkl'
+2025-09-07 00:00:29,262 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:00:29,262 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:00:33,294 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:33] "GET / HTTP/1.1" 200 -
+2025-09-07 00:00:34,028 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:34] "[33mGET /static/img/hero-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:00:34,036 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:34] "[33mGET /static/img/analytics-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:00:34,054 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:00:34,232 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:00:34,683 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:34] "[33mGET /static/img/pattern.png HTTP/1.1[0m" 404 -
+2025-09-07 00:00:36,592 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:36] "GET /login HTTP/1.1" 200 -
+2025-09-07 00:00:36,707 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:00:36,710 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:00:43,214 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 00:00:43,228 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:43] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 00:00:43,267 - webapp.app - ERROR - Exception on /teacher/dashboard [GET]
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'dropout'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\app.py", line 175, in teacher_dashboard
+    'dropout_risk': (df['dropout'] == 1).mean() * 100,
+                     ~~^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\pandas\core\frame.py", line 4107, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'dropout'
+2025-09-07 00:00:43,560 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:43] "[35m[1mGET /teacher/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 00:00:49,408 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:00:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:02:46,112 - webapp.app - ERROR - Exception on /teacher/dashboard [GET]
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'dropout'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\app.py", line 175, in teacher_dashboard
+    # Generate statistics
+                         ^
+  File "E:\Python\Lib\site-packages\pandas\core\frame.py", line 4107, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'dropout'
+2025-09-07 00:02:46,115 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:02:46] "[35m[1mGET /teacher/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 00:02:46,203 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:02:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:02:55,223 - webapp.app - ERROR - Error loading the model: [Errno 2] No such file or directory: 'output\\best_model.pkl'
+2025-09-07 00:02:55,243 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:02:55,243 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:03:08,372 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:08] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:03:08,608 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:08] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:03:08,690 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:03:10,283 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 00:03:10,296 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:10] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 00:03:16,805 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:16] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:03:16,806 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:16] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:03:16,974 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:16] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:03:16,999 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:03:17,036 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:03:34,256 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:34] "[33mGET /student/rsingh HTTP/1.1[0m" 404 -
+2025-09-07 00:03:46,107 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:46] "[33mGET /student/djain HTTP/1.1[0m" 404 -
+2025-09-07 00:03:46,123 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:03:46] "[33mGET /student/djain HTTP/1.1[0m" 404 -
+2025-09-07 00:04:05,301 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:04:05] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:04:05,341 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:04:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:04:05,346 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:04:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:04:24,636 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:04:24] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:04:29,927 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:04:29] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:04:30,040 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:04:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:05:42,381 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:05:42] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:05:42,427 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:05:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:05:42,474 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:05:42] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:05:42,475 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:05:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:05:56,158 - webapp.app - WARNING - Model file not found at output\best_model.pkl. Running in demo mode with limited functionality.
+2025-09-07 00:05:56,176 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:05:56,176 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:06:04,440 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:06:04] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:06:04,638 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:06:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:06:04,645 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:06:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:06:04,677 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:06:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:08:24,467 - webapp.app - WARNING - Model file not found at output\best_model.pkl. Running in demo mode with limited functionality.
+2025-09-07 00:08:24,490 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:08:24,491 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:08:37,470 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:37] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:08:37,681 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:37] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:08:37,686 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:08:37,765 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:08:52,395 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:52] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-09-07 00:08:52,427 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:52] "GET / HTTP/1.1" 200 -
+2025-09-07 00:08:52,490 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:08:52,492 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:52] "[33mGET /static/img/hero-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:08:52,495 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:52] "[33mGET /static/img/analytics-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:08:52,586 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:08:52,637 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:52] "[33mGET /static/img/pattern.png HTTP/1.1[0m" 404 -
+2025-09-07 00:08:54,343 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:54] "GET /login HTTP/1.1" 200 -
+2025-09-07 00:08:54,388 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:08:54,405 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:08:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:09:50,395 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:09:50] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:09:50,445 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:09:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:09:50,461 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:09:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:10:02,958 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:10:02] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:10:02,992 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:10:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:10:03,010 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:10:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:10:54,134 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:10:54] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:10:54,177 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:10:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:10:54,197 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:10:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:13:05,937 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:13:05] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:13:05,973 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:13:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:13:05,991 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:13:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:15:18,189 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:18] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:15:18,239 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:15:18,246 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:15:22,921 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:15:23,011 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:15:32,814 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:32] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:15:32,878 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:15:32,990 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:15:33,025 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:15:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:16:22,433 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:16:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 00:16:22,497 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:16:22] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 00:16:23,150 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:16:23] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:16:23,325 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:16:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:16:23,549 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:16:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:16:23,633 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:16:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:17:16,362 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 00:17:16,380 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:17:16,380 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:17:25,420 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:25] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:17:34,909 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:34] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 00:17:35,182 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:35] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 00:17:35,370 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:17:35,378 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:17:38,755 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-09-07 00:17:38,801 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:38] "GET / HTTP/1.1" 200 -
+2025-09-07 00:17:38,858 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:17:38,860 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:38] "[33mGET /static/img/hero-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:17:38,865 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:38] "[33mGET /static/img/analytics-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:17:38,929 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:17:38,952 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:38] "[33mGET /static/img/pattern.png HTTP/1.1[0m" 404 -
+2025-09-07 00:17:40,920 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:40] "GET /login HTTP/1.1" 200 -
+2025-09-07 00:17:40,966 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:17:41,012 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:17:49,266 - webapp.app - WARNING - Invalid password for user: rsingh
+2025-09-07 00:17:49,268 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:49] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:17:49,308 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:17:49,321 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:17:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:19:08,922 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 00:19:08,943 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:19:08,943 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:19:15,662 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:19:15,666 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:19:15,667 - webapp.app - INFO - User found in database: True
+2025-09-07 00:19:15,670 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:19:15,671 - webapp.app - INFO - Stored password hash: 486f092b47934f29320374455ed0797bdb4b57fee80ec92163f9b42f47a6f2f8
+2025-09-07 00:19:15,671 - webapp.app - INFO - Provided password: zgJ8#BuFZ#NJ
+2025-09-07 00:19:15,671 - webapp.app - INFO - Hashed provided password: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:19:15,672 - webapp.app - WARNING - Invalid password for user: rsingh
+2025-09-07 00:19:15,672 - webapp.app - WARNING - Expected: 486f092b47934f29320374455ed0797bdb4b57fee80ec92163f9b42f47a6f2f8, Got: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:19:15,710 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:15] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:19:15,861 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:19:15,873 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:19:20,765 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:19:20,769 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:19:20,771 - webapp.app - INFO - User found in database: True
+2025-09-07 00:19:20,774 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:19:20,774 - webapp.app - INFO - Stored password hash: 486f092b47934f29320374455ed0797bdb4b57fee80ec92163f9b42f47a6f2f8
+2025-09-07 00:19:20,776 - webapp.app - INFO - Provided password: zgJ8#BuFZ#NJ
+2025-09-07 00:19:20,777 - webapp.app - INFO - Hashed provided password: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:19:20,787 - webapp.app - WARNING - Invalid password for user: rsingh
+2025-09-07 00:19:20,792 - webapp.app - WARNING - Expected: 486f092b47934f29320374455ed0797bdb4b57fee80ec92163f9b42f47a6f2f8, Got: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:19:20,804 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:20] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:19:20,840 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:19:20,845 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:19:24,058 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:24] "GET / HTTP/1.1" 200 -
+2025-09-07 00:19:24,092 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:19:24,104 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:24] "[33mGET /static/img/hero-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:19:24,107 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:24] "[33mGET /static/img/analytics-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:19:24,160 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:19:24,170 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:24] "[33mGET /static/img/pattern.png HTTP/1.1[0m" 404 -
+2025-09-07 00:19:26,078 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:26] "GET /login HTTP/1.1" 200 -
+2025-09-07 00:19:26,151 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:19:26,160 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:19:44,400 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:19:44,400 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:19:44,404 - webapp.app - INFO - User found in database: True
+2025-09-07 00:19:44,404 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:19:44,406 - webapp.app - INFO - Stored password hash: 486f092b47934f29320374455ed0797bdb4b57fee80ec92163f9b42f47a6f2f8
+2025-09-07 00:19:44,408 - webapp.app - INFO - Provided password: zgJ8#BuFZ#NJ
+2025-09-07 00:19:44,408 - webapp.app - INFO - Hashed provided password: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:19:44,408 - webapp.app - WARNING - Invalid password for user: rsingh
+2025-09-07 00:19:44,408 - webapp.app - WARNING - Expected: 486f092b47934f29320374455ed0797bdb4b57fee80ec92163f9b42f47a6f2f8, Got: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:19:44,409 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:44] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:19:44,440 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:19:44,456 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:19:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:21:22,828 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 00:21:22,847 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:21:22,849 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:21:27,328 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:21:27,330 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:21:27,330 - webapp.app - INFO - User found in database: True
+2025-09-07 00:21:27,330 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:21:27,330 - webapp.app - INFO - Stored password hash: sAZyj&gQhUS9
+2025-09-07 00:21:27,331 - webapp.app - INFO - Provided password: zgJ8#BuFZ#NJ
+2025-09-07 00:21:27,332 - webapp.app - INFO - Hashed provided password: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:21:27,332 - webapp.app - WARNING - Invalid password for user: rsingh
+2025-09-07 00:21:27,332 - webapp.app - WARNING - Expected: sAZyj&gQhUS9, Got: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:21:27,361 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:27] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:21:27,481 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:21:27,513 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:21:31,630 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:31] "GET / HTTP/1.1" 200 -
+2025-09-07 00:21:31,663 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:21:31,676 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:31] "[33mGET /static/img/hero-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:21:31,680 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:31] "[33mGET /static/img/analytics-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 00:21:31,734 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:21:31,745 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:31] "[33mGET /static/img/pattern.png HTTP/1.1[0m" 404 -
+2025-09-07 00:21:33,933 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:33] "GET /login HTTP/1.1" 200 -
+2025-09-07 00:21:34,002 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:21:34,021 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:21:40,779 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:21:40,779 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:21:40,780 - webapp.app - INFO - User found in database: True
+2025-09-07 00:21:40,780 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:21:40,780 - webapp.app - INFO - Stored password hash: sAZyj&gQhUS9
+2025-09-07 00:21:40,782 - webapp.app - INFO - Provided password: zgJ8#BuFZ#NJ
+2025-09-07 00:21:40,782 - webapp.app - INFO - Hashed provided password: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:21:40,782 - webapp.app - WARNING - Invalid password for user: rsingh
+2025-09-07 00:21:40,782 - webapp.app - WARNING - Expected: sAZyj&gQhUS9, Got: de78ea98443c35cd30b7dc1a1541c48b2acc1751564a5995d2d631c5a240f089
+2025-09-07 00:21:40,792 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:40] "POST /login HTTP/1.1" 200 -
+2025-09-07 00:21:40,834 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:21:40,843 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:21:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 00:25:18,761 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 00:25:18,779 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:25:18,779 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:25:22,687 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:25:22,692 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:25:22,693 - webapp.app - INFO - User found in database: True
+2025-09-07 00:25:22,693 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:25:22,694 - webapp.app - INFO - Stored password hash: C7d!6f@1
+2025-09-07 00:25:22,694 - webapp.app - INFO - Provided password: C7d!6f@1
+2025-09-07 00:25:22,694 - webapp.app - INFO - Hashed provided password: ee0fee2bda658eb09f021c5ec6fa4656fb2465b6091089d325415e4ca39692de
+2025-09-07 00:25:22,694 - webapp.app - INFO - Password check passed for user: rsingh
+2025-09-07 00:25:22,695 - webapp.app - INFO - User rsingh logged in successfully
+2025-09-07 00:25:22,696 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:25:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 00:25:22,719 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:25:22] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 00:25:22,744 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 00:25:23,061 - webapp.app - ERROR - Exception on /student/dashboard [GET]
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\app.py", line 232, in student_dashboard
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\templates\student_dashboard.html", line 224, in template
+    <div class="progress-bar bg-{{ 'danger' if prediction else 'success' }}"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-09-07 00:25:23,111 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:25:23] "[35m[1mGET /student/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 00:25:32,329 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:25:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:25:36,347 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 00:25:36,359 - webapp.app - ERROR - Exception on /student/dashboard [GET]
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\app.py", line 232, in student_dashboard
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\templates\student_dashboard.html", line 224, in template
+    <div class="progress-bar bg-{{ 'danger' if prediction else 'success' }}"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-09-07 00:25:36,361 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:25:36] "[35m[1mGET /student/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 00:25:36,468 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:25:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:30:11,484 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 00:30:11,512 - webapp.app - ERROR - Exception on /student/dashboard [GET]
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\app.py", line 232, in student_dashboard
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\templates\student_dashboard.html", line 235, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2025-09-07 00:30:11,796 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:30:11] "[35m[1mGET /student/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 00:30:11,903 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:30:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:30:25,869 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 00:30:25,894 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:30:25,894 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:30:28,535 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 00:30:28,555 - webapp.app - ERROR - Exception on /student/dashboard [GET]
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\app.py", line 232, in student_dashboard
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\templates\student_dashboard.html", line 235, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2025-09-07 00:30:28,564 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:30:28] "[35m[1mGET /student/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 00:30:28,671 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:30:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:30:49,075 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:30:49] "GET /login HTTP/1.1" 200 -
+2025-09-07 00:30:49,233 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:30:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:31:08,678 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:31:08,681 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:31:08,681 - webapp.app - INFO - User found in database: True
+2025-09-07 00:31:08,682 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:31:08,682 - webapp.app - INFO - Stored password hash: C7d!6f@1
+2025-09-07 00:31:08,682 - webapp.app - INFO - Provided password: C7d!6f@1
+2025-09-07 00:31:08,684 - webapp.app - INFO - Hashed provided password: ee0fee2bda658eb09f021c5ec6fa4656fb2465b6091089d325415e4ca39692de
+2025-09-07 00:31:08,684 - webapp.app - INFO - Password check passed for user: rsingh
+2025-09-07 00:31:08,690 - webapp.app - INFO - User rsingh logged in successfully
+2025-09-07 00:31:08,691 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:31:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 00:31:08,700 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:31:08] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 00:31:08,732 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 00:31:08,749 - webapp.app - ERROR - Exception on /student/dashboard [GET]
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\app.py", line 232, in student_dashboard
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\templates\student_dashboard.html", line 235, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2025-09-07 00:31:08,758 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:31:08] "[35m[1mGET /student/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 00:31:08,958 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:31:08] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:39:25,171 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 00:39:25,204 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:39:25,204 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:39:32,227 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:39:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:39:32,326 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:39:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:39:32,676 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:39:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:39:33,623 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:39:33,627 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:39:33,632 - webapp.app - INFO - User found in database: True
+2025-09-07 00:39:33,650 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:39:33,670 - webapp.app - INFO - Stored password hash: C7d!6f@1
+2025-09-07 00:39:33,688 - webapp.app - INFO - Provided password: C7d!6f@1
+2025-09-07 00:39:33,708 - webapp.app - INFO - Hashed provided password: ee0fee2bda658eb09f021c5ec6fa4656fb2465b6091089d325415e4ca39692de
+2025-09-07 00:39:33,724 - webapp.app - INFO - Password check passed for user: rsingh
+2025-09-07 00:39:33,753 - webapp.app - INFO - User rsingh logged in successfully
+2025-09-07 00:39:33,777 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:39:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 00:39:33,838 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:39:33] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 00:39:33,887 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 00:39:34,012 - webapp.app - ERROR - Exception on /student/dashboard [GET]
+Traceback (most recent call last):
+  File "E:\Python\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\app.py", line 232, in student_dashboard
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "E:\Python\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\templates\student_dashboard.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\templates\base.html", line 80, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\templates\student_dashboard.html", line 72, in block 'content'
+    {% set progress_width = confidence|int %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Lib\site-packages\jinja2\filters.py", line 998, in do_int
+    return int(value)
+           ^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'confidence' is undefined
+2025-09-07 00:39:34,343 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:39:34] "[35m[1mGET /student/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 00:39:34,589 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:39:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:40:27,647 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 00:40:27,675 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 00:40:27,675 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 00:40:31,278 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:40:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:40:31,425 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:40:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:40:33,237 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 00:40:33,241 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 00:40:33,243 - webapp.app - INFO - User found in database: True
+2025-09-07 00:40:33,243 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 00:40:33,244 - webapp.app - INFO - Stored password hash: C7d!6f@1
+2025-09-07 00:40:33,244 - webapp.app - INFO - Provided password: C7d!6f@1
+2025-09-07 00:40:33,244 - webapp.app - INFO - Hashed provided password: ee0fee2bda658eb09f021c5ec6fa4656fb2465b6091089d325415e4ca39692de
+2025-09-07 00:40:33,244 - webapp.app - INFO - Password check passed for user: rsingh
+2025-09-07 00:40:33,244 - webapp.app - INFO - User rsingh logged in successfully
+2025-09-07 00:40:33,247 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:40:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 00:40:33,261 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:40:33] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 00:40:33,291 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 00:40:33,354 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:40:33] "GET /student/dashboard HTTP/1.1" 200 -
+2025-09-07 00:40:33,468 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:40:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-07 00:40:33,613 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:40:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 00:40:33,621 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 00:40:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:01:21,574 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:01:21,850 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 12:01:21,850 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 12:01:22,002 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:01:25,452 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:01:25,467 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:01:25,488 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:02:27,541 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:27] "GET / HTTP/1.1" 200 -
+2025-09-07 12:02:27,657 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:27] "[33mGET /static/img/analytics-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 12:02:27,770 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:27] "[33mGET /static/img/hero-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 12:02:27,882 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:02:27,922 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:02:28,385 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:28] "[33mGET /static/img/pattern.png HTTP/1.1[0m" 404 -
+2025-09-07 12:02:28,805 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-07 12:02:30,741 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:30] "GET /login HTTP/1.1" 200 -
+2025-09-07 12:02:30,800 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:02:30,814 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:02:40,400 - webapp.app - INFO - Login attempt - Username: teacher
+2025-09-07 12:02:40,404 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 12:02:40,404 - webapp.app - INFO - User found in database: True
+2025-09-07 12:02:40,404 - webapp.app - INFO - Checking password for user: teacher
+2025-09-07 12:02:40,404 - webapp.app - INFO - Stored password hash: cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416
+2025-09-07 12:02:40,405 - webapp.app - INFO - Provided password: teacher123
+2025-09-07 12:02:40,405 - webapp.app - INFO - Hashed provided password: cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416
+2025-09-07 12:02:40,405 - webapp.app - INFO - Password check passed for user: teacher
+2025-09-07 12:02:40,405 - webapp.app - INFO - User teacher logged in successfully
+2025-09-07 12:02:40,407 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 12:02:40,417 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:40] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 12:02:50,289 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:50] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 12:02:50,360 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:02:50,366 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:02:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:05:10,471 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:10] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 12:05:10,516 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:05:10,533 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:05:17,899 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:17] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 12:05:17,941 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:05:17,963 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:05:42,459 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:05:42,506 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-07 12:05:42,510 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-07 12:05:42,531 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:05:47,295 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:05:47,452 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:05:47,464 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:05:47,526 - webapp.app - INFO - Login attempt - Username: teacher
+2025-09-07 12:05:47,526 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 12:05:47,526 - webapp.app - INFO - User found in database: True
+2025-09-07 12:05:47,528 - webapp.app - INFO - Checking password for user: teacher
+2025-09-07 12:05:47,528 - webapp.app - INFO - Stored password hash: cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416
+2025-09-07 12:05:47,528 - webapp.app - INFO - Provided password: teacher123
+2025-09-07 12:05:47,528 - webapp.app - INFO - Hashed provided password: cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416
+2025-09-07 12:05:47,528 - webapp.app - INFO - Password check passed for user: teacher
+2025-09-07 12:05:47,529 - webapp.app - INFO - User teacher logged in successfully
+2025-09-07 12:05:47,530 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 12:05:47,535 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:47] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 12:05:49,779 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:49] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 12:05:50,018 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:05:50,020 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:05:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:07:09,069 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:07:09,084 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:07:10,751 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:07:18,198 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:07:18,231 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:07:18,238 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:07:59,306 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:07:59,308 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:07:59,310 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:08:00,475 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:08:09,904 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:08:09,927 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:08:09,936 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:08:19,967 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:08:19] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 12:08:20,083 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:08:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:08:20,085 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:08:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:08:45,118 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:08:45,123 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:08:46,494 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:08:51,060 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:08:51,070 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:08:51,078 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:09:07,020 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:09:07] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 12:09:07,180 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:09:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:09:07,188 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:09:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:10:06,859 - webapp.app - INFO - Login attempt - Username: rsingh
+2025-09-07 12:10:06,860 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 12:10:06,860 - webapp.app - INFO - User found in database: True
+2025-09-07 12:10:06,860 - webapp.app - INFO - Checking password for user: rsingh
+2025-09-07 12:10:06,860 - webapp.app - INFO - Stored password hash: C7d!6f@1
+2025-09-07 12:10:06,860 - webapp.app - INFO - Provided password: C7d!6f@1
+2025-09-07 12:10:06,863 - webapp.app - INFO - Hashed provided password: ee0fee2bda658eb09f021c5ec6fa4656fb2465b6091089d325415e4ca39692de
+2025-09-07 12:10:06,863 - webapp.app - INFO - Password check passed for user: rsingh
+2025-09-07 12:10:06,863 - webapp.app - INFO - User rsingh logged in successfully
+2025-09-07 12:10:06,864 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:10:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 12:10:06,896 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:10:06] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 12:10:06,963 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:10:07,009 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:10:07] "GET /student/dashboard HTTP/1.1" 200 -
+2025-09-07 12:10:07,093 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:10:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:10:07,097 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:10:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:17:09,606 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:17:09,617 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:17:11,099 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:17:23,522 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:17:23,548 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:17:23,554 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:18:26,892 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:18:26,893 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:18:27,229 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:18:27] "GET /student/dashboard HTTP/1.1" 200 -
+2025-09-07 12:18:27,357 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:18:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:18:27,388 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:18:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:21:25,759 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:21:25,763 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:21:25,814 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:21:25] "GET /student/dashboard HTTP/1.1" 200 -
+2025-09-07 12:21:25,855 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:21:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:21:25,868 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:21:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:22:01,347 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:22:01,347 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:22:01,351 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:01] "GET /student/dashboard HTTP/1.1" 200 -
+2025-09-07 12:22:01,392 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:22:01,403 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:22:20,557 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-09-07 12:22:20,594 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:20] "GET / HTTP/1.1" 200 -
+2025-09-07 12:22:20,650 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:20] "[33mGET /static/img/hero-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 12:22:20,665 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:22:20,666 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:20] "[33mGET /static/img/analytics-illustration.svg HTTP/1.1[0m" 404 -
+2025-09-07 12:22:20,678 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:22:20,786 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:20] "[33mGET /static/img/pattern.png HTTP/1.1[0m" 404 -
+2025-09-07 12:22:22,705 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:22] "GET /login HTTP/1.1" 200 -
+2025-09-07 12:22:22,766 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:22:22,784 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:22:41,757 - webapp.app - INFO - Login attempt - Username: teacher
+2025-09-07 12:22:41,765 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 12:22:41,770 - webapp.app - INFO - User found in database: True
+2025-09-07 12:22:41,771 - webapp.app - INFO - Checking password for user: teacher
+2025-09-07 12:22:41,772 - webapp.app - INFO - Stored password hash: cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416
+2025-09-07 12:22:41,773 - webapp.app - INFO - Provided password: teacher123
+2025-09-07 12:22:41,773 - webapp.app - INFO - Hashed provided password: cde383eee8ee7a4400adf7a15f716f179a2eb97646b37e089eb8d6d04e663416
+2025-09-07 12:22:41,774 - webapp.app - INFO - Password check passed for user: teacher
+2025-09-07 12:22:41,781 - webapp.app - INFO - User teacher logged in successfully
+2025-09-07 12:22:41,784 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 12:22:41,802 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:41] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 12:22:43,953 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:43] "GET /teacher/dashboard HTTP/1.1" 200 -
+2025-09-07 12:22:44,014 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:22:44,018 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:22:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:23:10,136 - webapp.app - INFO - Login attempt - Username: psharma
+2025-09-07 12:23:10,136 - webapp.app - INFO - Available usernames: ['rsingh', 'dyadav', 'vsharma', 'ssingh', 'msingh', 'djain', 'vgupta', 'rjain', 'psharma', 'rpatel', 'vjain', 'vkumar', 'asharma', 'spatel', 'ajain', 'asingh', 'rgupta', 'dchoudhary', 'ayadav', 'pyadav', 'vpatel', 'ryadav', 'vsingh', 'sjain', 'schoudhary', 'achoudhary', 'pgupta', 'rverma', 'pjain', 'rkumar', 'kmishra', 'vchoudhary', 'dverma', 'vverma', 'akumar', 'agupta', 'dmishra', 'dsharma', 'nkumar', 'apatel', 'pchoudhary', 'dsingh', 'pverma', 'rchoudhary', 'ppatel', 'rmishra', 'rsharma', 'ssharma', 'vmishra', 'skumar', 'dkumar', 'syadav', 'myadav', 'kyadav', 'mmishra', 'dpatel', 'smishra', 'mchoudhary', 'mkumar', 'msharma', 'sgupta', 'pmishra', 'sverma', 'nyadav', 'pkumar', 'ngupta', 'vyadav', 'psingh', 'mjain', 'amishra', 'kverma', 'njain', 'ksharma', 'nmishra', 'kpatel', 'kgupta', 'dgupta', 'nverma', 'nchoudhary', 'averma', 'teacher']
+2025-09-07 12:23:10,138 - webapp.app - INFO - User found in database: True
+2025-09-07 12:23:10,138 - webapp.app - INFO - Checking password for user: psharma
+2025-09-07 12:23:10,138 - webapp.app - INFO - Stored password hash: Fde!83@1
+2025-09-07 12:23:10,138 - webapp.app - INFO - Provided password: Fde!83@1
+2025-09-07 12:23:10,140 - webapp.app - INFO - Hashed provided password: 4c2c4fcaa4ad1b735bd1eba35413e6fb94ebb84d44550c5ebc49ce8b58d4aa7b
+2025-09-07 12:23:10,140 - webapp.app - INFO - Password check passed for user: psharma
+2025-09-07 12:23:10,140 - webapp.app - INFO - User psharma logged in successfully
+2025-09-07 12:23:10,140 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-07 12:23:10,158 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:10] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-07 12:23:10,205 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:23:10,222 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:10] "[35m[1mGET /student/dashboard HTTP/1.1[0m" 500 -
+2025-09-07 12:23:10,619 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:10] "GET /student/dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-09-07 12:23:10,642 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:10] "GET /student/dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-09-07 12:23:10,773 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:10] "GET /student/dashboard?__debugger__=yes&cmd=resource&f=console.png&s=S77ICsYB84sxrg6QTFAn HTTP/1.1" 200 -
+2025-09-07 12:23:10,989 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:10] "GET /student/dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-09-07 12:23:44,256 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:23:44,256 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:23:44,259 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:23:46,692 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:23:58,624 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:23:58,703 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:23:58,711 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:23:58,793 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:23:58,794 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:23:58,794 - webapp.app - ERROR - Error making prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:23:58,888 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:58] "GET /student/dashboard HTTP/1.1" 200 -
+2025-09-07 12:23:59,044 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:23:59,089 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:23:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-07 12:26:02,335 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:26:02,363 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:26:03,235 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:26:10,861 - webapp.app - INFO - Attempting to load model from: C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\..\output\best_model.pkl
+2025-09-07 12:26:13,831 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:26:13,858 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:26:13,864 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:26:25,363 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:26:25,369 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\Academic Work\\Projects\\SIH project\\Dropout Analysis Chatbot pt2\\webapp\\app.py', reloading
+2025-09-07 12:26:26,723 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-09-07 12:26:32,451 - webapp.app - INFO - Attempting to load model from: C:\Users\Admin\Desktop\Academic Work\Projects\SIH project\Dropout Analysis Chatbot pt2\webapp\..\output\best_model.pkl
+2025-09-07 12:26:35,691 - webapp.app - INFO - Successfully loaded the trained model
+2025-09-07 12:26:35,740 - werkzeug - WARNING -  * Debugger is active!
+2025-09-07 12:26:35,751 - werkzeug - INFO -  * Debugger PIN: 763-016-174
+2025-09-07 12:27:01,595 - webapp.app - ERROR - Error making model prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:27:01,601 - webapp.app - ERROR - Error making model prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:27:01,604 - webapp.app - ERROR - Error making model prediction: name 'preprocess_student_data' is not defined
+2025-09-07 12:27:01,677 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:27:01] "GET /student/dashboard HTTP/1.1" 200 -
+2025-09-07 12:27:01,801 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:27:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-07 12:27:01,832 - werkzeug - INFO - 127.0.0.1 - - [07/Sep/2025 12:27:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
