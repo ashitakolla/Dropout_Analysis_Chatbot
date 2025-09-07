@@ -1,0 +1,223 @@
+/* Chat Button */
+#chat-button {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    background-color: #0d6efd !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    cursor: pointer !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Make sure the button is visible on top of other elements */
+#chat-button i {
+    font-size: 24px !important;
+    pointer-events: none !important;
+}
+
+#chat-button:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+}
+
+#chat-button i {
+    font-size: 24px;
+}
+
+/* Chat Container */
+#chat-container {
+    position: fixed !important;
+    bottom: 100px !important;
+    right: 30px !important;
+    width: 350px !important;
+    height: 500px !important;
+    background-color: white !important;
+    border-radius: 12px !important;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    z-index: 9998 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    transform: translateY(20px) !important;
+    transition: all 0.3s ease !important;
+    pointer-events: auto !important;
+}
+
+/* Make sure the chat container is visible when active */
+#chat-container:not(.d-none) {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    display: flex !important;
+}
+
+#chat-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Chat Header */
+.chat-header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#chat-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Chat Messages */
+#chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 18px;
+    line-height: 1.4;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #0d6efd;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #e9ecef;
+    color: #212529;
+    border-bottom-left-radius: 4px;
+}
+
+.message-content {
+    white-space: pre-wrap;
+}
+
+/* Chat Input */
+#chat-form {
+    display: flex;
+    padding: 12px;
+    background-color: white;
+    border-top: 1px solid #e9ecef;
+}
+
+#user-input {
+    flex: 1;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    padding: 8px 15px;
+    outline: none;
+    resize: none;
+    height: 40px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+#send-button {
+    background: none;
+    border: none;
+    color: #0d6efd;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+#send-button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Typing indicator */
+.typing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.typing span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: typing 1.4s infinite ease-in-out;
+}
+
+.typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0%, 60%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    #chat-container {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+    
+    #chat-button {
+        bottom: 20px;
+        right: 20px;
+    }
+}
